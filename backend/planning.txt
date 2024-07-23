@@ -1,0 +1,42 @@
+voter application
+
+
+model
+schemas 
+routes
+
+functinalties
+1-user sign in/sign in
+2-see the list off all candidant
+3.vote counting real time
+4.use aadhar card for signup
+5.there should me a one admin the all table data candidant but he cant able to vote at all
+6.use can change there pasword 
+7.use can signup only aaddhar card it must sign up the user
+
+=================================================
+
+routes
+user Authentication
+  /signup Post-Crate a new user account
+  /login Post-Log to an existing user  (aadhar card number + password)
+
+
+Voting:
+/candidants Get: get the list of all candidants
+/vote/:candidant :Post -vote for a specific candidant
+
+vote counts
+  /vote/counts :get the list of candidants sorted by their vote counts
+
+  User Profile:
+      /profile:GET the user profile uniformation
+      /profile /password : PUt-change the user password
+
+
+
+Admin candidate management
+
+    /candidates POst -Create a new candidate
+    /candidate/:candidateId:Put Update an existing candidate
+    /candidate/:candidateId-DELETE delete a candidatnt fron the list
